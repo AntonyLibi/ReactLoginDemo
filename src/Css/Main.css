@@ -1,0 +1,690 @@
+.main_signin{
+    width: 100vw;
+    height: 100vh;
+/* background: #ECF0F4; */
+    display:flex;
+    flex-direction: row;
+}
+
+/* left container */
+
+.left_signin{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    /* position: absolute; */
+    width: 50%;
+    /* top: 0px; */
+    background-color: #E5E5E5;
+    align-items: center;
+}
+
+.sign_in_logo_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%;
+    margin-bottom: 5%;
+}
+
+.sign_in_logo{
+    width: 20%;
+}
+
+.form_container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    background-color: white;
+}
+
+.email_label{
+    width: 30%;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top:5%;
+    margin-left: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height */
+    color: #868B90;
+}
+
+.email_text{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 40px;
+    margin-top: 3%;
+    margin-left: 10%;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 3%;
+}
+
+.password_label{
+    width: 30%;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top:3%;
+    margin-left: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height */
+    color: #868B90;
+}
+
+.password_text{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 40px;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 3%;
+}
+
+.login_label{
+    color: red;
+    margin-top: 3%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.forgotpwd_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 3%;
+    margin-left: 40%;
+    width: 50%;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    cursor: pointer;
+
+color: #868B90;
+
+}
+
+.login_button ,.register_button{
+    position: relative;
+    margin-top: 3%;
+    width: 80%;
+    height: 45px;
+    color: white;
+    background: #4424A7;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.button__text{
+    transition: all 0.2s;
+} 
+
+.button--loading .button__text{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.button--loading::after{
+    content:"";
+    position: absolute;
+    width:16px;
+    height: 16px;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 5px solid transparent;
+    border-top-color: #FFFFFF;
+    border-radius: 50%;
+    animation: button--loading-spinner 1s ease infinite;
+}
+
+@keyframes button--loading-spinner {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+.separator_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    padding: 12px 0px;
+    width: 80%;
+    height: 40px;
+}
+
+.hr_separator1{
+width: 40%;
+height: 1px;
+background: #E5E7EB;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+margin: 0px 12px;
+}
+
+.hr_separator2{
+width: 40%;
+height: 1px;
+
+background: #E5E7EB;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+margin: 0px 12px;
+}
+
+.label_separator{
+    font-size: small;
+}
+
+.extra_login_container1, .extra_register_container1{
+    display: flex;
+    flex-direction: row;
+    margin-left:10%;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.btn_google{
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    width: 35%;
+    height: 45px;
+    background: #EA4335;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.img_google{
+    display: flex;
+    width: 43%;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 400px;
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.frame1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 50%;
+    height: 30px;
+}
+
+.label_google{
+    width:0%;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+/* identical to box height */
+    color: #FFFFFF;
+    /* Inside auto layout */
+    margin: 0% 40%;
+}
+
+.btn_facebook{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    width: 36%;
+    height: 45px;
+    border-radius: 8px;
+    border-width: 0px;
+    margin-left: 9%;
+    background: #1877F2;
+}
+
+.img_facebook{
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 400px;
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.frame2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 50%;
+    height: 30px;
+}
+
+.label_facebook{
+    width: 0px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+/* identical to box height */ 
+    color: #FFFFFF;
+/* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 40%;
+}
+
+.extra_login_container2, .extra_register_container2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-top: 3%;
+    padding: 0px;
+    width: 87%;
+    height: 50px;
+}
+
+.btn_apple{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    width: 40%;
+    height: 45px;
+    background: #EA4335;
+    border-radius: 8px;
+    border-width: 0px;
+    background: #000000;
+}
+
+.img_apple{
+    display: flex;
+    width: 43%;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 400px;
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.frame3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 50%;
+    height: 30px;
+}
+
+.label_apple{
+    width: 0px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+/* identical to box height */
+    color: #FFFFFF;
+/* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 40%;
+}
+
+.btn_twitter{
+    width: 42%;
+    height: 45px;
+    background: #1D9BF0;
+    margin-left: 10.5%;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.img_twitter{
+    position: static;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 400px;
+
+/* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.frame4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 50%;
+    height: 30px;
+}
+
+.label_twitter{
+    width: 0px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+/* identical to box height */
+    color: #FFFFFF;
+/* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 40%;
+}
+
+.no_account_container, .have_account_container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #868B90;
+    cursor: pointer;
+}
+
+/* Right container */
+
+.right_signin{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    width: 50%;
+    height:100vh;
+    justify-content: flex-end;
+    /* left: 750px; */
+    /* top: 0px; */
+    background: #4424A7;
+}
+
+.image_top_left{
+     display: flex;
+     align-self: flex-start;
+}
+
+.container2{
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width:100%;
+}
+
+.illustration_image{
+    height:60%
+}
+
+.main_container{
+    height: 47%;
+}
+
+.heading{
+    margin-top: 0%;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height, or 133% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.description{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+/* or 144% */
+
+text-align: center;
+margin-bottom: 0%;
+color: #FFFFFF;
+margin-bottom: 2%;
+}
+
+/* ForgotPassword */
+
+.main_forgot{
+    width: 100vw;
+    height: 100vh;
+/* background: #ECF0F4; */
+    display:flex;
+    flex-direction: row;
+}
+
+.left_forgot{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    /* justify-content: flex-end; */
+    /* position: absolute; */
+    width: 50%;
+    /* top: 0px; */
+    background-color: #E5E5E5;
+    align-items: center;
+}
+
+.right_forgot{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    width: 50%;
+    height:100vh;
+    justify-content: flex-end;
+    /* left: 750px; */
+    /* top: 0px; */
+    background: #4424A7;
+}
+
+.forgot_logo_container{
+    width: 25%;
+    height: 25%;
+    margin-top: 10%;
+}
+
+.forgot_logo{
+    width: 20%;
+    height: 20%;
+}
+
+.letter_image{
+    display:flex;
+    height:45%;
+    margin-left: 10%;
+    width:80%;
+}
+
+.form_container{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.mail_label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top:10%;
+    margin-left: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+/* identical to box height */
+    color: #868B90;
+}
+
+.mail_text{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 40px;
+    margin-top: 3%;
+    margin-left: 10%;
+    padding:3%;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.reset_link_button{
+    position: relative;
+    margin-top: 3%;
+    width: 80%;
+    height: 45px;
+    color: white;
+    background: #4424A7;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.back_to_login_container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #868B90;
+    cursor: pointer;
+}
+
+/* Home */
+
+.back_to_login_button{
+    width: 10%;
+    height: 35px;
+    color: white;
+    background: #a78ff7;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.home_container{
+    background-color: #e1f5f0;
+    height:100vh
+}
+
+.labelWelcome{
+    font-size: 200%;
+    font-weight: 700;
+}
+
+.home_heading{
+    background-color: #c2c2c5;
+    height:8%
+}
+
+.labelName{
+    color: #af1b0d;
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.loader{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+/* MainHome */
+
+.back_to_home_button{
+    width: 12%;
+    height: 35px;
+    color: white;
+    background: #f15757;
+    border-radius: 8px;
+    border-width: 0%;
+    cursor: pointer;
+}
+
